@@ -130,8 +130,8 @@ module test_bench();
   hp_multiplier mult1(.hp_inA(a), .hp_inB(b), .hp_product(out), .Exceptions(flag));
 initial 
   begin
-    $monitor("InA = %b InB = %b,\nOutput = %b, Flag = %b\n\n\n", a, b, out, flag);
-    //$monitor("InA = %b InB = %b,\n Expected = %b \nOutput = %b, Flag = %b\n\n\n", a, b, expected_output, out, flag);
+    /* $monitor("InA = %b InB = %b,\nOutput = %b, Flag = %b\n\n\n", a, b, out, flag); */
+    $monitor("InA = %b InB = %b,\n Expected = %b \nOutput = %b, Flag = %b\n\n\n", a, b, expected_output, out, flag);
 
     
     a = 16'b0110001011100101;
